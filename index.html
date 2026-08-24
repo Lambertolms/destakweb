@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DESTAKWEB | Soluções Digitais & Tecnologia que Impulsionam seu Negócio</title>
+  <meta name="description" content="Desenvolvimento de sites de alta conversão, assistência técnica especializada em notebooks e PCs, sistemas retrô games e nuvem privada local com Nextcloud.">
+  <meta name="keywords" content="criação de sites, desenvolvimento web, assistencia tecnica notebook, conserto pc, retro games, batocera, nextcloud, servidor local, destakweb">
+  
+  <!-- Open Graph / Meta Compartilhamento -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="DESTAKWEB | Soluções Tecnológicas, Sites & Retrô Games">
+  <meta property="og:description" content="Desenvolvimento de sites de alta conversão, manutenção de hardware e sistemas retrô games completos.">
+  
+  <!-- Favicon com a Logomarca Oficial -->
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  
+  <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  
+  <!-- Folhas de Estilo -->
+  <link rel="stylesheet" href="css/style.css?v=3.0">
+  <link rel="stylesheet" href="css/components.css?v=3.0">
+  <link rel="stylesheet" href="css/responsive.css?v=3.0">
+</head>
+<body>
+
+  <!-- ========================================================================
+       BARRA PROMOCIONAL DE TOPO (Gatilho de Urgência & Bônus)
+       ======================================================================== -->
+  <div class="top-promo-bar">
+    <div class="container top-promo-container">
+      <span class="top-promo-badge">🔥 Bônus Exclusivo</span>
+      <span class="top-promo-text">Feche seu projeto ou manutenção este mês e ganhe <strong>Domínio Grátis</strong>, <strong>Pasta Térmica Silver</strong> ou <strong>Desconto no PIX</strong>!</span>
+      <span class="top-promo-timer" id="promoCountdown">⏰ Termina em: 05d 14h 28m</span>
+      <a href="#orcamento" class="top-promo-link">Garantir Meu Bônus →</a>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       CABEÇALHO / NAVBAR (CLEAN LIGHT TECH THEME)
+       ======================================================================== -->
+  <header class="header">
+    <div class="container">
+      <a href="#home" class="logo" aria-label="DESTAKWEB - Início">
+        <!-- Logomarca Oficial no Topo -->
+        <img src="assets/images/logo.png" alt="DESTAKWEB - Tecnologia que conecta você ao futuro" class="logo-img" onerror="this.onerror=null; this.src='LOGO.png';">
+      </a>
+
+      <!-- Menu de Links em Formato Pílula -->
+      <nav class="nav-links">
+        <a href="#home" class="nav-link active">Início</a>
+        <a href="web.html" class="nav-link">Web</a>
+        <a href="manutencao.html" class="nav-link">Manutenção</a>
+        <a href="retro.html" class="nav-link">Retrô</a>
+        <a href="#cloud" class="nav-link">Nuvem</a>
+        <a href="#portfolio" class="nav-link">Portfólio</a>
+        <a href="#depoimentos" class="nav-link">Depoimentos</a>
+        <a href="#orcamento" class="nav-link">Orçamento</a>
+        <a href="https://t.me/+2yrFQvfSTUVmY2Q5" target="_blank" rel="noopener noreferrer" class="btn btn-telegram btn-sm" style="display: none;" id="mobileTelegramBtn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.643-.204-.657-.643.136-.953l11.57-4.458c.538-.196 1.006.128.832.941z"/>
+          </svg>
+          <span>Canal Telegram</span>
+        </a>
+        <a href="#orcamento" class="btn btn-primary btn-sm" style="display: none;" id="mobileCtaBtn">
+          <span>Simular Orçamento</span>
+        </a>
+      </nav>
+
+      <!-- Ações do Cabeçalho & Redes -->
+      <div class="nav-actions">
+        <div class="nav-social-links">
+          <a href="https://t.me/+2yrFQvfSTUVmY2Q5" target="_blank" rel="noopener noreferrer" class="nav-social-icon" title="Canal Telegram">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.643-.204-.657-.643.136-.953l11.57-4.458c.538-.196 1.006.128.832.941z"/>
+            </svg>
+          </a>
+          <a href="https://api.whatsapp.com/send?phone=5511999999999" target="_blank" rel="noopener noreferrer" class="nav-social-icon" title="WhatsApp">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+            </svg>
+          </a>
+        </div>
+
+        <a href="#orcamento" class="btn btn-primary btn-sm btn-header-cta">
+          <span>Simular Orçamento</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+
+        <!-- Botão Mobile Hambúrguer -->
+        <button class="mobile-toggle" aria-label="Abrir Menu de Navegação">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======================================================================
+         SEÇÃO HERO (DARK TECH 3D SHOWCASE)
+         ====================================================================== -->
+    <section id="home" class="hero-section">
+      <div class="glow-orb orb-purple" style="top: -60px; right: 10%;"></div>
+      <div class="glow-orb orb-blue" style="bottom: 10%; left: -60px;"></div>
+
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Conteúdo Principal do Hero -->
+          <div class="hero-content">
+            <div class="hero-badge-container">
+              <span class="badge-we-build">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                SOLUÇÕES DIGITAIS & HARDWARE
+              </span>
+            </div>
+
+            <h1 class="hero-title">
+              EXPERIÊNCIAS DIGITAIS QUE ALAVANCAM <span class="gradient-text">O SEU NEGÓCIO</span>
+            </h1>
+
+            <div class="hero-services-bullets">
+              <span>Desenvolvimento Web</span>
+              <span>Hardware & Manutenção</span>
+              <span>Retrô Games</span>
+              <span>Nuvem Privada</span>
+            </div>
+
+            <p class="hero-description">
+              Desenvolvemos websites ultrarrápidos e landing pages de alta conversão, executamos assistência técnica especializada em notebooks e computadores, configuramos centrais retrô games e instalamos servidores de nuvem privada.
+            </p>
+
+            <div class="hero-buttons">
+              <a href="#orcamento" class="btn-hero-primary">
+                <span>SIMULAR ORÇAMENTO</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <a href="#portfolio" class="btn-hero-secondary">
+                <span>VER PORTFÓLIO</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Composição 3D: Laptop + Smartphone Mockups -->
+          <div class="hero-3d-showcase">
+            <!-- Laptop 3D Mockup -->
+            <div class="laptop-3d-wrap">
+              <div class="laptop-bezel">
+                <div class="laptop-camera"></div>
+                <div class="laptop-screen-content">
+                  <div class="laptop-code-header">
+                    <div class="laptop-dots">
+                      <span class="d-red"></span>
+                      <span class="d-yellow"></span>
+                      <span class="d-green"></span>
+                    </div>
+                    <span class="laptop-tag">&lt;destakweb /&gt;</span>
+                  </div>
+
+                  <div class="laptop-hero-inner">
+                    <h4>CRIANDO SITES QUE <span style="color: #c084fc;">GERAM RESULTADOS</span></h4>
+                    <p>Design moderno. Código limpo. Alta conversão de clientes.</p>
+                    <span class="laptop-mini-btn">EXPLORAR MAIS</span>
+                  </div>
+
+                  <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
+                    <div style="flex: 1; height: 35px; background: rgba(255,255,255,0.06); border-radius: 6px; border: 1px solid rgba(255,255,255,0.1);"></div>
+                    <div style="flex: 1; height: 35px; background: rgba(255,255,255,0.06); border-radius: 6px; border: 1px solid rgba(255,255,255,0.1);"></div>
+                    <div style="flex: 1; height: 35px; background: rgba(255,255,255,0.06); border-radius: 6px; border: 1px solid rgba(255,255,255,0.1);"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="laptop-base-bottom">
+                <div class="laptop-notch"></div>
+              </div>
+            </div>
+
+            <!-- Smartphone 3D Mockup -->
+            <div class="phone-3d-wrap">
+              <div class="phone-screen-inner">
+                <div class="phone-notch-bar"></div>
+                
+                <div class="phone-profile-row">
+                  <div class="phone-avatar-badge">DW</div>
+                  <div style="font-size: 0.72rem;">
+                    <strong style="color: #fff; display: block;">DestakWeb</strong>
+                    <span style="color: #94a3b8; font-size: 0.65rem;">Tecnologia & Web</span>
+                  </div>
+                </div>
+
+                <div class="phone-stats-row">
+                  <div><strong>150+</strong><span>Projetos</span></div>
+                  <div><strong>100%</strong><span>Garantia</span></div>
+                  <div><strong>45k+</strong><span>Retrô</span></div>
+                </div>
+
+                <div class="phone-grid-icons">
+                  <div class="phone-mini-icon">💻</div>
+                  <div class="phone-mini-icon">🔧</div>
+                  <div class="phone-mini-icon">🕹️</div>
+                  <div class="phone-mini-icon">☁️</div>
+                </div>
+
+                <div class="phone-chart-preview">
+                  <div style="font-size: 0.65rem; color: #38bdf8; font-weight: 700; margin-bottom: 4px;">+140% CONVERSÃO</div>
+                  <div class="phone-chart-line">
+                    <div class="chart-bar" style="height: 35%;"></div>
+                    <div class="chart-bar" style="height: 50%;"></div>
+                    <div class="chart-bar" style="height: 45%;"></div>
+                    <div class="chart-bar" style="height: 70%;"></div>
+                    <div class="chart-bar" style="height: 60%;"></div>
+                    <div class="chart-bar" style="height: 85%;"></div>
+                    <div class="chart-bar" style="height: 100%;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SEÇÃO: O QUE FAZEMOS / NOSSOS SERVIÇOS
+         ====================================================================== -->
+    <section id="servicos" class="section" style="background: #ffffff; padding-top: 4.5rem; padding-bottom: 4.5rem;">
+      <div class="container">
+        <div class="section-header">
+          <span style="font-size: 0.85rem; font-weight: 800; text-transform: uppercase; color: #7c3aed; letter-spacing: 0.08em; display: block; margin-bottom: 0.5rem;">O QUE FAZEMOS</span>
+          <h2 class="section-title" style="font-size: 2.2rem; font-weight: 800; text-transform: uppercase;">NOSSOS SERVIÇOS</h2>
+        </div>
+
+        <div class="services-embedded-grid">
+          <!-- Card 1: Web Development -->
+          <div class="service-card-embedded">
+            <div class="service-round-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            </div>
+            <h3>DESENVOLVIMENTO WEB</h3>
+            <p class="service-subtext">Sites modernos, responsivos e de alto desempenho para impulsionar suas vendas.</p>
+            
+            <ul class="service-checklist-styled">
+              <li>Landing Pages de Alta Conversão</li>
+              <li>Lojas Virtuais & E-commerce</li>
+              <li>Sites Institucionais & Corporativos</li>
+              <li>Otimização para o Google (SEO)</li>
+              <li>Integração Direta com WhatsApp</li>
+            </ul>
+
+            <div class="service-embedded-mockup">
+              <div style="height: 90px; background: linear-gradient(135deg, #0c4a6e, #0284c7); border-radius: 8px; padding: 0.6rem; display: flex; flex-direction: column; justify-content: space-between; color: white;">
+                <div style="display: flex; gap: 4px;">
+                  <span style="width: 6px; height: 6px; border-radius: 50%; background: #ef4444;"></span>
+                  <span style="width: 6px; height: 6px; border-radius: 50%; background: #eab308;"></span>
+                  <span style="width: 6px; height: 6px; border-radius: 50%; background: #22c55e;"></span>
+                </div>
+                <div style="font-size: 0.75rem; font-weight: 700;">Desempenho 100/100 Google Lighthouse</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Manutenção de Hardware & PCs -->
+          <div class="service-card-embedded">
+            <div class="service-round-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+            </div>
+            <h3>MANUTENÇÃO & PCS</h3>
+            <p class="service-subtext">Diagnóstico preciso em bancada, reparo eletrônico e upgrades de velocidade.</p>
+            
+            <ul class="service-checklist-styled">
+              <li>Limpeza Física & Pasta Térmica Silver</li>
+              <li>Formatação Limpa com Backup Seguro</li>
+              <li>Reparo de Placas-Mãe & Curto-circuito</li>
+              <li>Upgrade para SSD NVMe Ultrarrápido</li>
+              <li>Garantia Comprovada de 90 Dias</li>
+            </ul>
+
+            <div class="service-embedded-mockup">
+              <div style="height: 90px; background: linear-gradient(135deg, #78350f, #d97706); border-radius: 8px; padding: 0.6rem; display: flex; flex-direction: column; justify-content: space-between; color: white;">
+                <div style="font-size: 0.72rem; font-weight: 700; display: flex; justify-content: space-between;">
+                  <span>Diagnóstico Térmico</span>
+                  <span style="color: #4ade80;">-47°C Redução</span>
+                </div>
+                <div style="background: rgba(0,0,0,0.3); border-radius: 4px; height: 16px; overflow: hidden; display: flex; align-items: center; padding: 0 4px; font-size: 0.65rem;">
+                  <span style="color: #4ade80; font-weight: 700;">45°C Normal</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Retrô Games & Emulação -->
+          <div class="service-card-embedded">
+            <div class="service-round-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            </div>
+            <h3>RETRÔ GAMES & ARCADE</h3>
+            <p class="service-subtext">Reviva os maiores clássicos dos videogames 100% prontos para jogar.</p>
+            
+            <ul class="service-checklist-styled">
+              <li>Pen Drives Bootáveis Plug & Play</li>
+              <li>HDs Externos com 45.000+ Jogos</li>
+              <li>PCs Retrô Gamers Prontos para TV HDMI</li>
+              <li>Capinhas em 3D e Menus em Português</li>
+              <li>Emulação de PS2, PS1, N64, SNES e Arcade</li>
+            </ul>
+
+            <div class="service-embedded-mockup">
+              <div style="height: 90px; background: linear-gradient(135deg, #1e1b4b, #312e81); border-radius: 8px; padding: 0.6rem; display: flex; flex-direction: column; justify-content: space-between; color: white;">
+                <div style="font-size: 0.72rem; font-weight: 700; color: #fde047; font-family: var(--font-mono);">JOGAR AGORA</div>
+                <div style="font-size: 0.68rem; color: #93c5fd;">BATOCERA V39 // 45k+ JOGOS</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         FAIXA DE DIFERENCIAIS ESCURA (DARK FEATURE RIBBON)
+         ====================================================================== -->
+    <section class="dark-feature-ribbon">
+      <div class="container">
+        <div class="feature-ribbon-grid">
+          <!-- Item 1 -->
+          <div class="feature-ribbon-item">
+            <div class="feature-ribbon-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+            </div>
+            <div class="feature-ribbon-text">
+              <h4>ENTREGA ÁGIL</h4>
+              <p>Valorizamos o seu tempo com prazos rápidos e entregas pontuais.</p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="feature-ribbon-item">
+            <div class="feature-ribbon-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            </div>
+            <div class="feature-ribbon-text">
+              <h4>DESIGN MODERNO</h4>
+              <p>Layouts limpos, exclusivos e focados na melhor experiência.</p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="feature-ribbon-item">
+            <div class="feature-ribbon-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+            </div>
+            <div class="feature-ribbon-text">
+              <h4>FOCO EM RESULTADOS</h4>
+              <p>Estratégias digitais pensadas para converter e gerar lucro.</p>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="feature-ribbon-item">
+            <div class="feature-ribbon-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path></svg>
+            </div>
+            <div class="feature-ribbon-text">
+              <h4>SUPORTE & GARANTIA</h4>
+              <p>Atendimento humanizado e 90 dias de garantia técnica formal.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SEÇÃO: PROJETOS RECENTES
+         ====================================================================== -->
+    <section id="portfolio" class="section" style="background: #f8fafc; padding-top: 4.5rem; padding-bottom: 4.5rem;">
+      <div class="container">
+        <div class="section-header">
+          <span style="font-size: 0.85rem; font-weight: 800; text-transform: uppercase; color: #7c3aed; letter-spacing: 0.08em; display: block; margin-bottom: 0.5rem;">NOSSO TRABALHO</span>
+          <h2 class="section-title" style="font-size: 2.2rem; font-weight: 800; text-transform: uppercase;">PROJETOS RECENTES</h2>
+        </div>
+
+        <div class="recent-projects-grid">
+          <!-- Projeto 1 -->
+          <div class="project-card-modern">
+            <div class="project-thumb-modern" style="background: linear-gradient(135deg, #090d16, #1e1b4b);">
+              <div style="text-align: center; color: white;">
+                <div style="font-size: 0.95rem; font-weight: 800; color: #38bdf8;">Portal Corporativo</div>
+                <div style="font-size: 0.72rem; color: #94a3b8;">Landing Page de Alta Conversão</div>
+              </div>
+            </div>
+            <div class="project-footer-bar">
+              <div class="project-badge-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <div class="project-meta-info">
+                <h4>Site Institucional</h4>
+                <span>Desenvolvimento Web</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projeto 2 -->
+          <div class="project-card-modern">
+            <div class="project-thumb-modern" style="background: linear-gradient(135deg, #1e293b, #0f172a);">
+              <div style="text-align: center; color: white;">
+                <div style="font-size: 0.95rem; font-weight: 800; color: #f472b6;">Loja Virtual de Moda</div>
+                <div style="font-size: 0.72rem; color: #94a3b8;">Catálogo com Checkout PIX</div>
+              </div>
+            </div>
+            <div class="project-footer-bar">
+              <div class="project-badge-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+              </div>
+              <div class="project-meta-info">
+                <h4>E-commerce Completo</h4>
+                <span>Desenvolvimento Web</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projeto 3 -->
+          <div class="project-card-modern">
+            <div class="project-thumb-modern" style="background: linear-gradient(135deg, #451a03, #78350f);">
+              <div style="text-align: center; color: white;">
+                <div style="font-size: 0.95rem; font-weight: 800; color: #fbbf24;">Laboratório de Hardware</div>
+                <div style="font-size: 0.72rem; color: #fde68a;">Reparo de Placa & Pasta Silver</div>
+              </div>
+            </div>
+            <div class="project-footer-bar">
+              <div class="project-badge-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+              </div>
+              <div class="project-meta-info">
+                <h4>Assistência Técnica</h4>
+                <span>Hardware & PCs</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projeto 4 -->
+          <div class="project-card-modern">
+            <div class="project-thumb-modern" style="background: linear-gradient(135deg, #1e1b4b, #581c87);">
+              <div style="text-align: center; color: white;">
+                <div style="font-size: 0.95rem; font-weight: 800; color: #a855f7;">Retrô Station 4K</div>
+                <div style="font-size: 0.72rem; color: #e9d5ff;">45.000+ Jogos Prontos</div>
+              </div>
+            </div>
+            <div class="project-footer-bar">
+              <div class="project-badge-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              </div>
+              <div class="project-meta-info">
+                <h4>PC Retrô Gamer</h4>
+                <span>Sistemas & Emulação</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SEÇÃO: DEPOIMENTOS
+         ====================================================================== -->
+    <section id="depoimentos" class="testimonials-section">
+      <div class="container">
+        <div class="section-header">
+          <span style="font-size: 0.85rem; font-weight: 800; text-transform: uppercase; color: #7c3aed; letter-spacing: 0.08em; display: block; margin-bottom: 0.5rem;">O QUE NOSSOS CLIENTES DIZEM</span>
+          <h2 class="section-title" style="font-size: 2.2rem; font-weight: 800; text-transform: uppercase;">DEPOIMENTOS DE QUEM CONFIA</h2>
+        </div>
+
+        <div class="testimonials-grid">
+          <!-- Depoimento 1 -->
+          <div class="testimonial-card-modern">
+            <div>
+              <div class="quote-mark-purple">“</div>
+              <p class="testimonial-text">"Eles construíram o nosso site exatamente como imaginamos. Altamente profissionais, entrega super rápida e suporte excelente!"</p>
+            </div>
+            <div>
+              <div class="testimonial-stars">★★★★★</div>
+              <div class="testimonial-author">
+                <div style="width: 42px; height: 42px; border-radius: 50%; background: linear-gradient(135deg, #7c3aed, #d946ef); color: white; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.9rem;">JM</div>
+                <div class="author-details">
+                  <h5>Juliana Mendes</h5>
+                  <span>Diretora Executiva</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Depoimento 2 -->
+          <div class="testimonial-card-modern">
+            <div>
+              <div class="quote-mark-purple">“</div>
+              <p class="testimonial-text">"Recuperaram a placa-mãe do meu notebook de trabalho que outras assistências condenaram. Ficou rápido como novo e sem barulho nenhum!"</p>
+            </div>
+            <div>
+              <div class="testimonial-stars">★★★★★</div>
+              <div class="testimonial-author">
+                <div style="width: 42px; height: 42px; border-radius: 50%; background: linear-gradient(135deg, #0284c7, #2563eb); color: white; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.9rem;">CE</div>
+                <div class="author-details">
+                  <h5>Carlos Eduardo</h5>
+                  <span>Empresário</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Depoimento 3 -->
+          <div class="testimonial-card-modern">
+            <div>
+              <div class="quote-mark-purple">“</div>
+              <p class="testimonial-text">"O sistema retrô games no pen drive é surreal! Pluguei na TV e joguei na hora todos os clássicos da infância com controles sem fio. 10/10!"</p>
+            </div>
+            <div>
+              <div class="testimonial-stars">★★★★★</div>
+              <div class="testimonial-author">
+                <div style="width: 42px; height: 42px; border-radius: 50%; background: linear-gradient(135deg, #059669, #10b981); color: white; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.9rem;">DS</div>
+                <div class="author-details">
+                  <h5>David Silveira</h5>
+                  <span>Colecionador Retrô</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SEÇÃO: NUVEM & COMPARATIVO (NEXTCLOUD PRIVADO)
+         ====================================================================== -->
+    <section id="cloud" class="section section-cloud" style="background: #ffffff;">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag tag-cloud">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            Privacidade & Segurança de Dados
+          </span>
+          <h2 class="section-title">Sua própria nuvem no estilo Google Drive, sem mensalidades</h2>
+          <p class="section-desc">Montagem e configuração de servidores locais de backup e sincronização com <strong>Nextcloud</strong>. Todos os seus arquivos com total privacidade sob seu controle físico.</p>
+        </div>
+
+        <div class="cloud-grid-split">
+          <div>
+            <h3 style="font-size: 1.65rem; margin-bottom: 1rem;">Por que ter sua própria Nuvem Local?</h3>
+            <p style="margin-bottom: 1.5rem;">Pare de pagar mensalidades caras em dólares para serviços externos. Tenha terabytes de espaço na sua empresa ou residência com acesso seguro de qualquer lugar do mundo.</p>
+
+            <div class="cloud-benefit-list">
+              <div class="cloud-benefit-item">
+                <div class="cloud-benefit-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                </div>
+                <div class="cloud-benefit-info">
+                  <h4>100% de Privacidade e Conformidade LGPD</h4>
+                  <p>Nenhuma empresa terceirizada tem acesso aos seus documentos confidenciais ou fotos.</p>
+                </div>
+              </div>
+
+              <div class="cloud-benefit-item">
+                <div class="cloud-benefit-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg>
+                </div>
+                <div class="cloud-benefit-info">
+                  <h4>Sincronização Automática com Celulares e PCs</h4>
+                  <p>Aplicativo no Android/iOS que faz backup automático das suas fotos, vídeos e arquivos de trabalho.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="cloud-compare-card">
+              <div class="compare-header">
+                <h3>Comparativo de Vantagens</h3>
+                <p style="font-size: 0.85rem; color: #64748b; margin-top: 4px;">Nuvem Própria Nextcloud vs Nuvem Pública Tradicional</p>
+              </div>
+
+              <table class="compare-table">
+                <thead>
+                  <tr>
+                    <th>Recurso</th>
+                    <th>Nuvem Tradicional</th>
+                    <th style="color: var(--cloud-primary);">Nuvem DestakWeb</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Mensalidades</strong></td>
+                    <td style="color: #ef4444;">Eternas e crescentes</td>
+                    <td class="compare-highlight">ZERO mensalidades</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Privacidade</strong></td>
+                    <td>Dados em data centers externos</td>
+                    <td class="compare-highlight">Controle Físico 100% Seu</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Velocidade na Rede Local</strong></td>
+                    <td>Limitada pela internet</td>
+                    <td class="compare-highlight">Velocidade Gigabit Instantânea</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SEÇÃO: SIMULADOR DE ORÇAMENTO INTERATIVO
+         ====================================================================== -->
+    <section id="orcamento" class="section section-budget">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag tag-budget">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+            Simulador de Orçamento
+          </span>
+          <h2 class="section-title">Faça uma estimativa rápida e envie direto no WhatsApp</h2>
+          <p class="section-desc">Selecione o serviço e os recursos desejados para calcular uma estimativa instantânea. Ao final, você pode enviar o resumo com um clique para iniciarmos o atendimento.</p>
+        </div>
+
+        <div class="calculator-wrapper">
+          <!-- Passo 1: Categoria de Serviço -->
+          <div class="calc-step-header">
+            <div class="step-circle">1</div>
+            <div class="step-title">Selecione o Serviço Principal:</div>
+          </div>
+
+          <div class="service-selector-grid">
+            <div class="service-option-card selected" data-service="web">
+              <div class="service-option-icon">💻</div>
+              <div class="service-option-name">Desenvolvimento Web</div>
+              <div class="service-option-sub">Sites, Landing Pages & Lojas</div>
+            </div>
+
+            <div class="service-option-card" data-service="maint">
+              <div class="service-option-icon">🔧</div>
+              <div class="service-option-name">Manutenção & PCs</div>
+              <div class="service-option-sub">Limpeza, Placas & Sistema</div>
+            </div>
+
+            <div class="service-option-card" data-service="retro">
+              <div class="service-option-icon">🕹️</div>
+              <div class="service-option-name">Retrô Games</div>
+              <div class="service-option-sub">Pen Drives, HDs e PCs Prontos</div>
+            </div>
+
+            <div class="service-option-card" data-service="cloud">
+              <div class="service-option-icon">☁️</div>
+              <div class="service-option-name">Nuvem & Backup Local</div>
+              <div class="service-option-sub">Servidores Nextcloud & NAS</div>
+            </div>
+          </div>
+
+          <!-- Passo 2: Opções Dinâmicas (Preenchidas via JS) -->
+          <div class="calc-step-header">
+            <div class="step-circle">2</div>
+            <div class="step-title">Escolha o Pacote e Opcionais:</div>
+          </div>
+
+          <div id="calcDynamicOptions" class="calc-dynamic-options">
+            <!-- Renderizado dinamicamente pelo calculator.js -->
+          </div>
+
+          <!-- Passo 3: Dados de Contato e Resumo -->
+          <div class="calc-step-header">
+            <div class="step-circle">3</div>
+            <div class="step-title">Resumo e Envio da Proposta:</div>
+          </div>
+
+          <div class="form-group" style="margin-bottom: 2rem;">
+            <label class="form-label" for="calcClientName">Seu Nome ou Empresa (Opcional):</label>
+            <input type="text" id="calcClientName" class="form-control" placeholder="Ex: Maria Silva / Minha Empresa">
+          </div>
+
+          <div class="calc-summary-box">
+            <div class="calc-summary-info">
+              <div id="calcSummaryTitle" class="calc-summary-title">Desenvolvimento de Sites — Landing Page</div>
+              <div id="calcSummaryDesc" class="calc-summary-desc">Pacote base selecionado. Você pode adicionar mais recursos acima.</div>
+            </div>
+
+            <div class="calc-price-display">
+              <span class="calc-price-label">Estimativa Calculada:</span>
+              <span id="calcSummaryPrice" class="calc-price-value">R$ 690,00</span>
+            </div>
+
+            <div>
+              <button id="calcWhatsAppBtn" class="btn btn-whatsapp btn-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                </svg>
+                <span>Solicitar Proposta no WhatsApp</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SEÇÃO: PERGUNTAS FREQUENTES (FAQ ACORDEON)
+         ====================================================================== -->
+    <section id="faq" class="section section-faq" style="background: #ffffff;">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag tag-budget">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+            Tire Suas Dúvidas
+          </span>
+          <h2 class="section-title">Perguntas Frequentes</h2>
+          <p class="section-desc">Separamos as dúvidas mais comuns dos nossos clientes para ajudar você a escolher a melhor solução.</p>
+        </div>
+
+        <div class="faq-accordion">
+          <!-- FAQ 1 -->
+          <div class="faq-item">
+            <div class="faq-header">
+              <span>Como funciona a criação de um site ou landing page?</span>
+              <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+            <div class="faq-body">
+              <p>Após a simulação e aprovação da proposta, fazemos um alinhamento rápido das informações do seu negócio. Desenvolvemos o layout com código limpo e moderno, integramos os formulários e botão de WhatsApp, e colocamos seu site no ar otimizado para o Google em poucos dias.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item">
+            <div class="faq-header">
+              <span>O sistema de Retrô Games funciona em qualquer computador ou TV?</span>
+              <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+            <div class="faq-body">
+              <p>Sim! Nossos <strong>Pen Drives Bootáveis</strong> podem ser conectados em qualquer PC ou notebook comum (basta iniciar pelo pen drive, sem mexer no Windows). Já o <strong>PC Retrô Gamer Pronto</strong> liga direto em qualquer TV via cabo HDMI com controles sem fio já pareados.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item">
+            <div class="faq-header">
+              <span>Como funciona a garantia do serviço de manutenção de computadores?</span>
+              <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+            <div class="faq-body">
+              <p>Oferecemos <strong>garantia de 90 dias</strong> para serviços eletrônicos de placa-mãe e procedimentos de manutenção física. Todos os testes de estresse são gravados e validados em bancada antes da entrega.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       RODAPÉ DARK DE CONVERSÃO & WHATSAPP
+       ======================================================================== -->
+  <footer class="conversion-footer-dark">
+    <div class="container">
+      <div class="conversion-footer-grid">
+        <!-- Coluna 1: Chamada Forte -->
+        <div class="conversion-cta-box">
+          <h3>PRONTO PARA ALAVANCAR <span>SEU NEGÓCIO?</span></h3>
+          <p>Vamos criar algo incrível juntos. Entre em contato hoje mesmo e dê o próximo passo tecnológico!</p>
+          <a href="#orcamento" class="btn-hero-primary" style="padding: 0.75rem 1.75rem; font-size: 0.88rem;">
+            <span>ENTRAR EM CONTATO →</span>
+          </a>
+        </div>
+
+        <!-- Coluna 2: Dados de Contato -->
+        <div class="footer-contact-list">
+          <div class="footer-contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <span>+55 11 99999-9999</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <span>contato@destakweb.com.br</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            <span>www.destakweb.com.br</span>
+          </div>
+        </div>
+
+        <!-- Coluna 3: Card WhatsApp Direto -->
+        <div>
+          <a href="https://api.whatsapp.com/send?phone=5511999999999&text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20com%20a%20DestakWeb." target="_blank" rel="noopener noreferrer" class="whatsapp-direct-box">
+            <div class="whatsapp-direct-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+            </div>
+            <div class="whatsapp-direct-text">
+              <h4>FALAR NO WHATSAPP</h4>
+              <span>Atendimento Imediato</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom" style="padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.08); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+        <div style="color: #64748b; font-size: 0.85rem;">
+          &copy; 2026 DESTAKWEB. Todos os direitos reservados.
+        </div>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="#" style="color: #64748b; font-size: 0.82rem;">Termos de Uso</a>
+          <a href="#" style="color: #64748b; font-size: 0.82rem;">Privacidade</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       BOTÃO FLUTUANTE WHATSAPP
+       ======================================================================== -->
+  <a href="https://api.whatsapp.com/send?phone=5511999999999&text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20DestakWeb%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida." target="_blank" rel="noopener noreferrer" class="floating-whatsapp" aria-label="Falar no WhatsApp">
+    <div class="whatsapp-pulse"></div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+    </svg>
+    <span>Fale Conosco</span>
+  </a>
+
+  <!-- ========================================================================
+       NOTIFICAÇÃO FLUTUANTE DE PROVA SOCIAL (Tempo Real)
+       ======================================================================== -->
+  <div id="socialProofToast" class="social-proof-toast" aria-live="polite">
+    <div class="social-proof-dot"></div>
+    <div class="social-proof-content">
+      <span class="social-proof-title" id="socialProofTitle">⚡ Novo Orçamento Solicitado</span>
+      <span class="social-proof-desc" id="socialProofDesc">Carlos (São Paulo/SP) acabou de simular um PC Retrô Gamer.</span>
+    </div>
+    <button class="social-proof-close" id="closeSocialProof" aria-label="Fechar notificação">
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+    </button>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/calculator.js"></script>
+</body>
+</html>
